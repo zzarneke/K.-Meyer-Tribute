@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#003087",
+                        "on-surface": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "on-surface-variant": "#444652"
+                    },
+                    "fontFamily": { "headline-lg": ["Space Grotesk"], "body-lg": ["Inter"], "display-lg": ["Space Grotesk"] },
+                    "fontSize": { "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}], "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}], "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hard-shadow-black { box-shadow: 4px 4px 0px 0px #1a1c1c; }
+        .badge-watermark::before { content: "LEGEND"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 8rem; font-family: 'Space Grotesk'; font-weight: 900; color: #A5ACAF; opacity: 0.1; pointer-events: none; z-index: 0; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<header class="bg-white border-b-4 border-black fixed top-0 w-full z-50">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-[1200px] mx-auto">
+<div class="text-3xl font-black text-blue-900 italic tracking-tighter font-['Space_Grotesk']">PEPSI STASH</div>
+<div class="hidden md:flex space-x-8 font-['Space_Grotesk'] font-bold uppercase tracking-tight">
+<a class="text-black font-bold hover:text-blue-800 transition-all" href="index.html">Syllabus</a>
+<a class="text-black font-bold hover:text-blue-800 transition-all" href="infamy.html">Hall of Infamy</a>
+<a class="text-black font-bold hover:text-blue-800 transition-all" href="wall.html">The Integral</a>
+<a class="text-black font-bold hover:text-blue-800 transition-all" href="office.html">Office Hours</a>
+</div>
+<div class="flex gap-4">
+<button onclick="window.location.href='login-error.html'" class="font-bold uppercase border-2 border-black px-4 py-2 hover:bg-blue-900 hover:text-white transition-all">LOGIN</button>
+<button onclick="window.location.href='status.html'" class="font-bold uppercase px-6 py-2 bg-primary-container text-white border-2 border-black hard-shadow-black hover:scale-105 transition-all">TENURE</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 max-w-[1200px] mx-auto px-8">
+<section class="relative mb-24 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="inline-block bg-[#A5ACAF] border-2 border-black px-4 py-1 uppercase mb-4">Class of '91 Survivors</span>
+<h1 class="font-display-lg text-display-lg uppercase text-primary-container mb-6 leading-[0.9]">YOU'VE BEEN <span class="block text-black">LEARNT!</span></h1>
+<p class="text-body-lg font-body-lg mb-8">The official archive of students who stared into the abyss of Calculus and came out... different. Rehydrate your intellect with a cold dose of reality.</p>
+<div class="flex gap-4">
+<button onclick="window.location.href='archive.html'" class="bg-primary-container text-white px-8 py-4 border-2 border-black hard-shadow-black uppercase">Browse Archives</button>
+</div>
+</div>
+<div class="relative">
+<div class="border-4 border-primary-container bg-white aspect-square flex items-center justify-center p-8">
+<img class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJgNASi0AIPxtAIv44LXKLfeKSWo_ly8MbuqT_AZdjY5AAXIP3dwCba1exR-eYnK0PmOpPccn8dzyDWwX8PsIsP3Qogp62vMCMvGXQ2lMJL-L-7rHuXvSricwUOymQGKzdzvdwv7GMwPif-hYE-stkglg9cYT1NK5Aeu-axYEsoZK6A6TVtDKSrGt2D0I2LvWBMMof6S1hIXo4b3h-wpMmk9w1rzlNZE2Kcl2lu2mCAUFoNzPbyMnFij-N8swqgTr1uXxoiVn5lA"/>
+</div>
+</div>
+</section>
+<section class="max-w-2xl mx-auto">
+<div class="text-center mb-12"><h2 class="font-headline-lg uppercase mb-2">CONFESS YOUR TRAUMA</h2></div>
+<div class="bg-white border-2 border-black p-10 hard-shadow-black">
+<form class="space-y-6" onsubmit="event.preventDefault(); window.location.href='confession-success.html';">
+<div class="flex flex-col"><label class="uppercase mb-2">Subject Name</label><input class="border-2 border-black p-3" placeholder="BARNABY B. BOTCH" type="text"/></div>
+<div class="flex flex-col"><label class="uppercase mb-2">Breakdown Description</label><textarea class="border-2 border-black p-3" placeholder="DESCRIBE THE MOMENT THE INTEGRAL WON..." rows="4"></textarea></div>
+<button class="w-full bg-primary-container text-white py-4 border-2 border-black hard-shadow-black uppercase" type="submit">Submit for Review</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-slate-200 border-t-2 border-black mt-20 px-10 py-12 flex justify-between items-center max-w-[1200px] mx-auto">
+<div class="text-lg font-black text-blue-900 uppercase">PEPSI STASH</div>
+<p class="text-sm font-bold uppercase">© 2024 DEPT. OF RETIRED DERIVATIVES</p>
+</footer>
+</body>
+</html>

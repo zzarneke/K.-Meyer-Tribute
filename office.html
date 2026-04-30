@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>PEPSI STASH - Office Hours</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+    <style>
+        .hard-shadow { box-shadow: 6px 6px 0px 0px #003087; }
+        .marquee { overflow: hidden; white-space: nowrap; }
+        .marquee-content { display: inline-block; animation: marquee 15s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    </style>
+</head>
+<body class="bg-[#f9f9f9] font-['Inter'] text-[#1a1c1c]">
+    <!-- Header -->
+    <header class="bg-white border-b-4 border-black sticky top-0 z-50">
+        <div class="flex justify-between items-center w-full px-8 py-4 max-w-[1200px] mx-auto">
+            <div class="text-3xl font-black text-blue-900 italic tracking-tighter font-['Space_Grotesk']">PEPSI STASH</div>
+            <nav class="hidden md:flex space-x-8 font-['Space_Grotesk'] font-bold uppercase tracking-tight">
+                <a class="text-black font-bold hover:text-blue-800 transition-all" href="index.html">Syllabus</a>
+                <a class="text-black font-bold hover:text-blue-800 transition-all" href="infamy.html">Hall of Infamy</a>
+                <a class="text-black font-bold hover:text-blue-800 transition-all" href="wall.html">The Integral</a>
+                <a class="text-black font-bold hover:text-blue-800 transition-all" href="office.html">Office Hours</a>
+            </nav>
+            <button onclick="window.location.href='status.html'" class="font-bold uppercase px-6 py-2 bg-[#003087] text-white border-2 border-black hard-shadow hover:scale-105 transition-all">TENURE</button>
+        </div>
+    </header>
+
+    <main class="max-w-[1200px] mx-auto px-8 py-16">
+        <!-- Hero Section -->
+        <section class="mb-16">
+            <div class="inline-block bg-[#A5ACAF] border-2 border-black px-4 py-1 mb-6 font-['Space_Grotesk'] font-bold uppercase">Location: The Void / Faculty Lounge Room 412</div>
+            <h1 class="font-['Space_Grotesk'] text-6xl font-black uppercase mb-4 tracking-tighter">Office Hours</h1>
+            <p class="text-xl font-medium text-slate-600 max-w-2xl italic">"I am available for exactly 60 seconds of eye contact per week. Plan accordingly."</p>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-6">
+
+                <!-- The Warning Marquee -->
+                <div class="bg-yellow-400 border-4 border-black p-4 marquee">
+                    <div class="marquee-content font-['Space_Grotesk'] font-black uppercase">
+                        WARNING: OFFICE HOURS SUBJECT TO CHANGE BASED ON CARBONATION LEVELS — NO CALCULATORS ALLOWED — LEAVE YOUR TEARS AT THE DOOR — 
+                    </div>
+                </div>
+
+                <!-- Weekly Schedule -->
+                <div class="bg-white border-4 border-black p-8 hard-shadow">
+                    <h2 class="font-['Space_Grotesk'] text-3xl font-black uppercase mb-8 border-b-2 border-black pb-2">Weekly Window of Opportunity</h2>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 border-2 border-black bg-slate-50">
+                            <span class="font-bold uppercase">Monday</span>
+                            <span class="font-mono text-blue-900 font-bold">10:00 AM — 10:01 AM (EST)</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 border-2 border-black">
+                            <span class="font-bold uppercase">Tuesday</span>
+                            <span class="font-mono text-blue-900 font-bold">3:14 AM — 3:15 AM (Mars Time)</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 border-2 border-black bg-slate-50">
+                            <span class="font-bold uppercase">Wednesday</span>
+                            <span class="font-mono text-blue-900 font-bold">High Noon (Ulaanbaatar Standard Time)</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 border-2 border-black">
+                            <span class="font-bold uppercase">Thursday</span>
+                            <span class="font-mono text-blue-900 font-bold">Whenever the Pepsi machine is refilled</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 border-2 border-black bg-black text-white">
+                            <span class="font-bold uppercase">Friday</span>
+                            <span class="font-mono font-bold">CLOSED FOR SPIRITUAL REHYDRATION</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- Sidebar Status -->
+            <div class="space-y-8">
+                <div class="bg-white border-4 border-black p-6 hard-shadow text-center">
+                    <span class="material-symbols-outlined text-6xl mb-4 text-red-600">timer_off</span>
+                    <h3 class="font-['Space_Grotesk'] font-black uppercase text-xl">Current Status</h3>
+                    <div class="mt-4 py-2 bg-red-100 border-2 border-red-600 text-red-600 font-bold uppercase animate-pulse">
+                        OUT GETTING SODA
+                    </div>
+                    <p class="mt-4 text-sm font-medium italic text-slate-500">Last seen: 1994</p>
+                </div>
+
+                <div class="bg-[#003087] text-white border-4 border-black p-6 hard-shadow">
+                    <h3 class="font-['Space_Grotesk'] font-black uppercase text-xl mb-4">The "Ask Meyer" Rules</h3>
+                    <ul class="text-sm space-y-3 font-medium uppercase tracking-tight">
+                        <li class="flex gap-2"><span>1.</span> Do not ask about the curve.</li>
+                        <li class="flex gap-2"><span>2.</span> Do not ask about your grade.</li>
+                        <li class="flex gap-2"><span>3.</span> Refer to Rule 1 and 2.</li>
+                        <li class="flex gap-2"><span>4.</span> Bring a sacrifice (Silver Can).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-200 border-t-4 border-black mt-20 px-10 py-12 flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto">
+        <div class="text-lg font-black text-blue-900 uppercase font-['Space_Grotesk']">PEPSI STASH</div>
+        <div class="flex space-x-8 mt-4 md:mt-0">
+            <a class="font-bold text-sm uppercase text-slate-700 hover:text-black" href="archive.html">Archive</a>
+            <a class="font-bold text-sm uppercase text-slate-700 hover:text-black" href="grades.html">Grades</a>
+            <a class="font-bold text-sm uppercase text-slate-700 hover:text-black" href="lounge.html">Faculty Lounge</a>
+        </div>
+    </footer>
+</body>
+</html>

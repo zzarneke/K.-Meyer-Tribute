@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ACCESS DENIED - PEPSI STASH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        .hard-shadow { box-shadow: 8px 8px 0px 0px #ba1a1a; }
+        .bg-grid {
+            background-image: radial-gradient(#ba1a1a 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-red-50 bg-grid min-h-screen font-['Inter'] flex items-center justify-center p-8">
+
+    <div class="max-w-2xl w-full bg-white border-4 border-black p-8 md:p-12 hard-shadow text-center space-y-8">
+        <!-- Error Icon -->
+        <div class="inline-block bg-red-600 text-white p-4 border-4 border-black transform -rotate-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+        </div>
+
+        <h1 class="font-['Space_Grotesk'] text-5xl font-black uppercase text-red-600 tracking-tighter italic">
+            Access Denied
+        </h1>
+
+        <div class="space-y-4 border-y-2 border-black py-6">
+            <p class="font-bold uppercase text-lg italic">Reason: Insufficient Sarcasm Levels</p>
+            <p class="text-slate-600 font-medium">
+                Your credentials have been differentiated to zero. Only faculty members with a blood-caffeine content of <span class="bg-yellow-300 px-1">0.08% or higher</span> are permitted to enter the Stash.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <button onclick="window.location.href='index.html'" class="bg-black text-white py-4 border-2 border-black font-['Space_Grotesk'] font-bold uppercase hover:bg-white hover:text-black transition-all">
+                Retreat to Syllabus
+            </button>
+            <button onclick="alert('ERROR: Your mouse is moving too fast. Calm down.')" class="bg-red-600 text-white py-4 border-2 border-black font-['Space_Grotesk'] font-bold uppercase hover:bg-red-800 transition-all">
+                Force Override
+            </button>
+        </div>
+
+        <p class="text-[10px] font-bold uppercase text-slate-400">
+            Security Log: Intruder detected from IP 127.0.0.CALC. Meyer has been notified.
+        </p>
+    </div>
+
+</body>
+</html>
